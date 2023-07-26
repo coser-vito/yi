@@ -1,0 +1,45 @@
+if-else语句的比较大小
+#include<stdio.h>
+int main()
+{
+int a, b,c,max;
+if(a>b&&a>c)
+printf("max=%d",a};
+else if(b>c&&b>a)
+printf("max=%d",b};
+else
+printf("max=%d",c};
+return 0;
+}
+
+函数法
+#include<stdio.h>
+int MAX(int a,int b,int c)
+{
+	if(a>b&&a>c)
+	return a;
+	else if(b>a&&b>c)
+	return b;
+	else if(c>a&&c>b)
+	return c;
+ } 
+int main()
+{
+	int a,b,c;
+    scanf("%d%d%d",&a,&b,&c);
+	int ret=MAX(a,b,c);
+	printf("max = %d\n",ret);
+	return 0;
+ } 
+
+三目运算符法
+#include<stdio.h>
+int main()
+{
+	int a,b,c;
+	scanf("%d%d%d",&a,&b,&c);
+	int max=a>b?a>c?a:c:b>c?b:c;
+	printf("max=%d\n",max);
+    return 0;
+}
+ 
