@@ -88,7 +88,7 @@ return 0;
 #include<stdio.h>
 int main()
 {
-int a=1,i=1,sum;
+int a=1,i=1,sum=0;
 int n;
 for(n=1;n<=10;n++)
 {
@@ -98,6 +98,21 @@ for(i=1;i<=n;i++)
 a=a*i;
 }
 sum=sum+a;
-}printf("%d",sum);
+}
+printf("sum=%d",sum);
+return 0;
+}
+
+#include<stdio.h>
+int main()
+{
+int a=1,sum=0;
+int n;
+for(n=1;n<=10;n++)
+{
+a=a*n;
+sum=sum+a;
+}
+printf("sum=%d",sum);
 return 0;
 }
