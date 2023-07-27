@@ -67,3 +67,36 @@ int main()
 	}
 	return 0;
  } 
+
+
+计算n的阶乘
+#include<stdio.h>
+int main()
+{
+int a=1,i=1;
+int n;
+scanf("%d",&n);
+for(i=1;i<=n;i++)
+{
+a=a*i;
+}
+ptintf("n!=%d",a);
+return 0;
+}
+
+计算1！+2！+3！+.....+10!//用for循环的嵌套结构
+#include<stdio.h>
+int main()
+{
+int a=1,i=1,sum;
+int n;
+for(n=1;n<=10;n++)
+{
+for(i=1;i<=n;i++)
+{
+a=a*i;
+}
+sum=sum+a;
+}printf("%d",sum);
+return 0;
+}
