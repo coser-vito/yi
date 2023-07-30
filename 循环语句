@@ -116,3 +116,38 @@ sum=sum+a;
 printf("sum=%d",sum);
 return 0;
 }
+
+
+计算1-1/2+1/3-1/4......+1/99-1/100的和
+#include<stdio.h>
+int main()
+{
+int i=1,s=1;
+float sum1=o,sum2=0,sum;
+whlie(i<=100)
+{
+sum1=sum1+1.0/i;
+i=i+2;
+}
+while(s<=100)
+{
+sum2=sum2-1.0/s;
+s=s+2;
+}
+sum=sum1+sum2;
+printf("sum=%f",sum);
+return 0;
+}
+#include<stdio.h>
+int main()
+{
+int i=0,flage;
+float sum=0;
+for(i=1;i<=100;i++)
+{
+sum=sum+flage*1.0/i;
+flage=-flage；
+}
+printf("sum%f\n",sum);
+return 0
+}
